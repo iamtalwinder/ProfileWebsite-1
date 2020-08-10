@@ -28,12 +28,9 @@ $(() => {
     { offset: "60%" }
   );
 
-  $("#about").waypoint(
-    (direction) => {
-      if (direction === "up") changeActiveNav("about");
-    },
-    { offset: "15%" }
-  );
+  $("#about").waypoint((direction) => {
+    if (direction === "up") changeActiveNav("about");
+  });
 
   $("#portfolio").waypoint(
     (direction) => {
@@ -42,12 +39,9 @@ $(() => {
     { offset: "60%" }
   );
 
-  $("#portfolio").waypoint(
-    (direction) => {
-      if (direction === "up") changeActiveNav("portfolio");
-    },
-    { offset: "15%" }
-  );
+  $("#portfolio").waypoint((direction) => {
+    if (direction === "up") changeActiveNav("portfolio");
+  });
 
   $("#contact").waypoint(
     (direction) => {
@@ -56,12 +50,9 @@ $(() => {
     { offset: "60%" }
   );
 
-  $("#contact").waypoint(
-    (direction) => {
-      if (direction === "up") changeActiveNav("contact");
-    },
-    { offset: "15%" }
-  );
+  $("#contact").waypoint((direction) => {
+    if (direction === "up") changeActiveNav("contact");
+  });
 
   function changeActiveNav(dest) {
     $("nav .link-wrap .active").removeClass("active");
