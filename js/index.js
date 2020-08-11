@@ -1,9 +1,9 @@
-$(() => {
+$(function () {
   $("nav .fa-bars").click(() => {
     $("nav .link-wrap").toggleClass("visible");
   });
 
-  $(".page-link").click((event) => {
+  $(".page-link").click(function (event) {
     let dest = $(event.target).attr("dest");
     $("nav .link-wrap").removeClass("visible");
 
@@ -58,4 +58,15 @@ $(() => {
     $("nav .link-wrap .active").removeClass("active");
     $("nav").find(`[dest="${dest}"]`).addClass("active");
   }
+
+  //animation
+  $(".hide-to-left").waypoint(
+    function () {
+      $(this.element).removeClass("hide-to-left");
+      $(this.element).next().removeClass("hide-to-right");
+    },
+    {
+      offset: "70%",
+    }
+  );
 });

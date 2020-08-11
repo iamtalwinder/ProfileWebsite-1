@@ -1,0 +1,51 @@
+#about {
+  padding: 50px;
+}
+
+.label-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 60px;
+}
+
+.label-wrap > div {
+  text-align: center;
+  text-justify: auto;
+}
+
+.label {
+  text-align: center;
+  font-size: 900%;
+  color: #04c2c9;
+}
+
+.label-header {
+  color: #444649;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 32px;
+  padding-top: 10px;
+}
+
+.label-description {
+  padding-top: 10px;
+  color: #616161;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+  .label-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .label-wrap {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
