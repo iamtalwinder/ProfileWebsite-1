@@ -3,7 +3,7 @@ $(() => {
     $("nav .link-wrap").toggleClass("visible");
   });
 
-  $("nav .link-wrap .page-link").click((event) => {
+  $(".page-link").click((event) => {
     let dest = $(event.target).attr("dest");
     $("nav .link-wrap").removeClass("visible");
 
@@ -11,7 +11,7 @@ $(() => {
 
     $("html, body").animate(
       {
-        scrollTop: $("#" + dest).offset().top - 63,
+        scrollTop: $("#" + dest).offset().top - 53,
       },
       400
     );
