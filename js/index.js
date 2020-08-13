@@ -69,4 +69,14 @@ $(function () {
       offset: "70%",
     }
   );
+
+  $(".fadein").waypoint(
+    function () {
+      let animationSpeed = $(this.element).attr("animation-speed");
+      $(this.element).css({ transition: animationSpeed, opacity: "1" });
+    },
+    {
+      offset: "70%",
+    }
+  );
 });
