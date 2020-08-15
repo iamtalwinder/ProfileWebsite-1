@@ -62,8 +62,20 @@ $(function () {
   //animation
   $(".hide-to-left").waypoint(
     function () {
+      let transition = $(this.element).attr("transition");
+      $(this.element).css({ transition: transition });
       $(this.element).removeClass("hide-to-left");
-      $(this.element).next().removeClass("hide-to-right");
+    },
+    {
+      offset: "70%",
+    }
+  );
+
+  $(".hide-to-right").waypoint(
+    function () {
+      let transition = $(this.element).attr("transition");
+      $(this.element).css({ transition: transition });
+      $(this.element).removeClass("hide-to-right");
     },
     {
       offset: "70%",
@@ -74,6 +86,7 @@ $(function () {
     function () {
       let animationSpeed = $(this.element).attr("animation-speed");
       $(this.element).css({ transition: animationSpeed, opacity: "1" });
+      $(this.element).removeClass("fadein");
     },
     {
       offset: "70%",

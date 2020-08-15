@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .flex-row {
@@ -11,26 +10,23 @@
 
 .header {
   color: #444649;
-  font-family: "Raleway";
   font-weight: bold;
   font-size: 32px;
-  transition: 0.8s ease;
 }
 
 .header-bar {
   background: #444649;
   height: 4px;
   margin: 25px 0 75px;
-  width: 70px;
-  transition: 0.8s ease;
+  width: 80px;
 }
 
 .hide-to-left {
-  margin-left: -1700px;
+  margin-left: -150vw;
 }
 
 .hide-to-right {
-  margin-right: -1700px;
+  margin-left: 150vw;
 }
 
 .fadein {

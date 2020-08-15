@@ -1,6 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Raleway";
+}
+
+body {
+  overflow-x: hidden;
 }
 
 nav {
@@ -28,13 +33,15 @@ nav .link-wrap {
   height: 0px;
 }
 
+.page-link {
+  cursor: pointer;
+}
+
 nav .link-wrap .page-link {
-  font-family: "Raleway";
   font-size: 25px;
   padding-top: 24px;
   padding-left: 24px;
   transition: color 0.5s;
-  cursor: pointer;
 }
 
 nav .link-wrap .active {
