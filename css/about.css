@@ -22,6 +22,8 @@
 }
 
 .label-header {
+  width: 100%;
+  text-align: center;
   color: #444649;
   font-weight: bold;
   font-size: 32px;
@@ -39,10 +41,6 @@
 .me {
   height: 450px;
   width: 400px;
-}
-
-.label-description .highlight {
-  color: #04c2c9;
 }
 
 .skill-wrap {

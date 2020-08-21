@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/utils.css" />
 
     <link
@@ -14,22 +15,22 @@
     <script src="https://kit.fontawesome.com/dc9377a53d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav>
+    <nav class="black-background">
       <i class="fa fa-bars"></i>
       <div class="link-wrap">
         <div class="page-link active" dest="home">HOME</div>
         <div class="page-link" dest="about">ABOUT</div>
-        <div class="page-link" dest="portfolio">PROTFOLIO</div>
+        <div class="page-link" dest="portfolio">PORTFOLIO</div>
         <div class="page-link" dest="contact">CONTACT</div>
       </div>
     </nav>
     <main class="main">
-      <section id="home">
+      <section id="home" class="black-background">
         <div id="stars1"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div id="intro">
-          <span>Hello I'm <span class="highlight">Talwinder Singh</span></span>
+          <span>Hello I'm <span class="magenta-highlight">Talwinder Singh</span></span>
           <br />
           <span>I'm a full-stack web developer.</span>
           <div class="button page-link" dest="about">
@@ -88,7 +89,7 @@
                 I'm a Front-End Developer from India.
                 I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
                 <br>
-                <span class="page-link highlight" dest="contact">Let's make something special</span>
+                <span class="page-link green-highlight" dest="contact">Let's make something special</span>
             </div>
           </div>
           <div class="flex skill-wrap" transition="0.8s ease">
@@ -165,9 +166,36 @@
         </div>
       </section>
       <section id="portfolio">portfolio</section>
-      <section id="contact">contact</section>
+      <section id="contact" class="black-background">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+        >
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div class="flex" style="padding: 50px">
+          <div class="header hide-to-left" style="color: #fff" transition="0.8s ease">CONTACT</div>
+          <div class="header-bar hide-to-right" style="background: #fff" transition="0.8s ease"></div>
+          <p class="green-highlight">
+            Have a question or want to work together?
+          </p>
+
+          <form>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Enter E-mail" required>
+            <textarea type="text" name="msg" placeholder="Your message" required></textarea>
+            <button type="submit" id="submit">SUBMIT</button>
+          </form>
+      </div>
+      </section>
     </main>
-    <footer>footer</footer>
+    <footer class="flex">
+      <button class="page-link up-button" dest="home">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>

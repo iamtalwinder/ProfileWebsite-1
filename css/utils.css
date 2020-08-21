@@ -32,3 +32,15 @@
 .fadein {
   opacity: 0;
 }
+
+.black-background {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.green-highlight {
+  color: #04c2c9;
+}
+
+.magenta-highlight {
+  color: #e31b6d;
+}

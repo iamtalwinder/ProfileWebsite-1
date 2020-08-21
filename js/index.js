@@ -3,8 +3,8 @@ $(function () {
     $("nav .link-wrap").toggleClass("visible");
   });
 
-  $(".page-link").click(function (event) {
-    let dest = $(event.target).attr("dest");
+  $(".page-link").click(function () {
+    let dest = $(this).attr("dest");
     $("nav .link-wrap").removeClass("visible");
 
     changeActiveNav(dest);
