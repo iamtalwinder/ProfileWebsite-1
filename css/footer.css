@@ -1,0 +1,14 @@
+footer {
+  background: #252934;
+  min-height: 20vh;
+}
+
+.up-button {
+  padding: 15px 10px;
+  font-size: 24px;
+  border: none;
+  background: #e31b6d;
+  color: #ffffff;
+  outline: none;
+  margin-top: -35px;
+}
