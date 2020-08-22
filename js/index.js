@@ -1,5 +1,5 @@
 $(function () {
-  $("nav .fa-bars").click(() => {
+  $("nav .menu").click(() => {
     $("nav .link-wrap").toggleClass("visible");
   });
 

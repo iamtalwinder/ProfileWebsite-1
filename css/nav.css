@@ -7,7 +7,7 @@ nav {
   z-index: 1;
 }
 
-nav .fa-bars {
+nav .menu {
   float: right;
   font-size: 32px;
   line-height: 50px;
@@ -45,7 +45,7 @@ nav .visible {
 }
 
 @media screen and (min-width: 600px) {
-  nav .fa-bars {
+  nav .menu {
     display: none;
   }
 

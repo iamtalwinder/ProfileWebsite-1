@@ -59,6 +59,11 @@
   }
 }
 
+#home .button i {
+  font-size: inherit;
+  vertical-align: bottom;
+}
+
 #home .button:hover {
   background-color: #04c2c9;
   border-color: #04c2c9;
