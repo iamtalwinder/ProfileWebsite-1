@@ -12,39 +12,56 @@
   color: #fff;
   text-align: center;
   font-family: "Raleway";
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
-  font-size: 40px;
-  line-height: 60px;
-  top: 35%;
+  font-size: 24px;
+  top: 30%;
+  margin: 0 10px 0 10px;
 }
 
 #home .button {
+  display: block;
   margin: auto;
   margin-top: 10%;
-  font-size: 30px;
-  padding: 20px;
+  font-size: 24px;
+  padding: 10px;
   border: 3px solid #ffffff;
-  width: fit-content;
+  color: #ffffff;
+  outline: none;
+  background: none;
   cursor: pointer;
   transition: 0.6s ease;
 }
 
-#home .button i {
-  transition: 0.6s ease;
+@media screen and (min-width: 600px) {
+  #intro {
+    font-size: 40px;
+  }
+
+  #home .button {
+    font-size: 32px;
+    padding: 18px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #intro {
+    font-size: 50px;
+  }
+
+  #home .button {
+    font-size: 40px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #home .button {
+    margin-top: 4%;
+  }
 }
 
 #home .button:hover {
   background-color: #04c2c9;
   border-color: #04c2c9;
-}
-
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-text-fill-color: transparent;
 }
 
 #stars1 {
