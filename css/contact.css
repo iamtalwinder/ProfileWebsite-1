@@ -2,16 +2,11 @@ form {
   width: 90%;
 }
 
-@media screen and (min-width: 1000px) {
-  form {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  form {
-    width: 30%;
-  }
+.form-header {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin: -20px 0 30px 0;
 }
 
 form input,
@@ -22,8 +17,8 @@ textarea {
   margin-bottom: 10px;
   outline: none;
   background: #252934;
-  font-size: 24px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 5px;
   width: 100%;
 }
 
@@ -32,11 +27,11 @@ textarea {
 }
 
 form button {
-  border: 5px solid #ffffff;
-  padding: 12px 26px;
+  border: 3px solid #ffffff;
+  padding: 10px 22px;
   color: #ffffff;
   background: none;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   float: right;
   transition: 0.8s ease;
@@ -47,32 +42,59 @@ form button:hover {
   border-color: #04c2c9;
 }
 
-.form-header {
-  font-size: 24px;
-  width: 100%;
-  text-align: center;
-  margin: -20px 0 30px 0;
-}
-
 .contact-info {
-  font-size: 24px;
-  margin: 20px 0 20px 0;
+  margin: 12px 0 12px 0;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 .contact-info i {
+  font-size: 32px;
   color: #04c2c9;
 }
 
-.contact-info div {
-  vertical-align: middle;
-  line-height: 28px;
+.contact-info span {
+  font-size: 16px;
+  position: relative;
+  top: -10px;
 }
 
-.contact-info div:first-of-type {
+.contact-info div {
   margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.contact-info div:last-child {
+  margin-bottom: 40px;
 }
 
 .contact-info div > i {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  form {
+    width: 80%;
+  }
+
+  .contact-info i {
+    font-size: 40px;
+  }
+
+  .contact-info span {
+    font-size: 24px;
+    top: -12px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    width: 30%;
+  }
 }

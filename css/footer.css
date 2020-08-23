@@ -4,11 +4,15 @@ footer {
 }
 
 .up-button {
-  padding: 15px 10px;
-  font-size: 24px;
+  padding: 12px 6px;
   border: none;
   background: #e31b6d;
   color: #ffffff;
   outline: none;
-  margin-top: -35px;
+  margin-top: -25px;
+}
+
+.up-button i {
+  font-size: 28px;
+  transform: rotate(-90deg);
 }
