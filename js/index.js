@@ -96,13 +96,14 @@ $(function () {
   //portfolio
   $("#project-filter-1").change(function () {
     let value = $("#project-filter-1").val();
-    console.log(value);
+    $(`.project-filter-2 > div[value="${value}"]`).click();
   });
 
   $(".project-filter-2 > div").click(function () {
     let value = $(this).attr("value");
     $(".project-filter-2-active").removeClass("project-filter-2-active");
     $(this).addClass("project-filter-2-active");
+    $("#project-filter-1").val(value);
     console.log(value);
   });
 });
