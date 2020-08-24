@@ -1,5 +1,5 @@
 $(function () {
-  $("nav .menu").click(() => {
+  $("nav .menu").click(function () {
     $("nav .link-wrap").toggleClass("visible");
   });
 
@@ -92,4 +92,17 @@ $(function () {
       offset: "70%",
     }
   );
+
+  //portfolio
+  $("#project-filter-1").change(function () {
+    let value = $("#project-filter-1").val();
+    console.log(value);
+  });
+
+  $(".project-filter-2 > div").click(function () {
+    let value = $(this).attr("value");
+    $(".project-filter-2-active").removeClass("project-filter-2-active");
+    $(this).addClass("project-filter-2-active");
+    console.log(value);
+  });
 });

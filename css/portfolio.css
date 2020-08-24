@@ -1,0 +1,50 @@
+#portfolio {
+  background: #f5f5f5;
+}
+
+.project-filter-1-wrap > p {
+  display: inline;
+  font-size: 24px;
+  font-weight: bold;
+  color: #444649;
+  margin-right: 10px;
+}
+
+#project-filter-1 {
+  font-size: 18px;
+  padding: 10px;
+}
+
+#project-filter-1:focus {
+  border-color: #e31b6d;
+  outline: none;
+}
+
+.project-filter-2 {
+  display: none;
+  font-size: 20px;
+}
+
+.project-filter-2 > div {
+  padding: 10px 20px;
+  transition: 0.5s ease;
+}
+
+.project-filter-2 > div:hover:not(.project-filter-2-active) {
+  background: #e6dada;
+}
+
+.project-filter-2-active {
+  background: #e31b6d;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 750px) {
+  .project-filter-1-wrap {
+    display: none;
+  }
+
+  .project-filter-2 {
+    display: flex;
+  }
+}

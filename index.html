@@ -1,12 +1,14 @@
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Talwinder Singh</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/utils.css" />
 
@@ -19,11 +21,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-
-    <!-- <script
-      src="https://kit.fontawesome.com/dc9377a53d.js"
-      crossorigin="anonymous"
-    ></script> -->
   </head>
   <body>
     <nav class="black-background">
@@ -104,7 +101,7 @@
           </div>
         </div>
 
-        <div class="me-and-skill">
+        <div class="me-and-project">
           <div class="me-wrap flex" transition="0.8s ease">
             <img src="img/me.jpg" class="me" />
             <div class="label-header">Who's this guy?</div>
@@ -118,7 +115,7 @@
               >
             </div>
           </div>
-          <div class="flex skill-wrap" transition="0.8s ease">
+          <div class="flex project-wrap" transition="0.8s ease">
             <div class="bar">
               <div>HTML</div>
               <div style="width: 90%;">
@@ -191,7 +188,33 @@
           </div>
         </div>
       </section>
-      <section id="portfolio">portfolio</section>
+      <section id="portfolio" class="flex">
+        <div class="header" transition="0.8s ease">PORTFOLIO</div>
+        <div class="header-bar" transition="0.8s ease"></div>
+
+        <div class="project-filter-1-wrap">
+          <p>Filter:</p>
+          <select id="project-filter-1">
+            <option value="All">All</option>
+            <option value="React">React</option>
+            <option value="JS/Jquery">JS/Jquery</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Python">Python</option>
+            <option value="Nodejs">Nodejs</option>
+            <option value="MySQL">MySQL</option>
+          </select>
+        </div>
+
+        <div class="project-filter-2">
+          <div class="project-filter-2-active" value="All">All</div>
+          <div value="React">React</div>
+          <div value="JS/Jquery">JS/Jquery</div>
+          <div value="Bootstrap">Bootstrap</div>
+          <div value="Python">Python</div>
+          <div value="Nodejs">Nodejs</div>
+          <div value="MySQL">MySQL</div>
+        </div>
+      </section>
       <section id="contact" class="black-background">
         <svg
           preserveAspectRatio="none"

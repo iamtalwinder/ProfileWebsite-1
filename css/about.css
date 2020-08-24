@@ -1,5 +1,5 @@
 #about {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 20px 10px;
 }
 
 .label {
@@ -135,6 +135,6 @@
 
 @media screen and (min-width: 1200px) {
   #about {
-    padding: 0 120px 0 120px;
+    padding: 0 120px 20px 120px;
   }
 }
