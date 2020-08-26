@@ -94,6 +94,12 @@ $(function () {
   );
 
   //portfolio
+
+  var $projects = $(".projects").isotope({
+    itemSelector: ".project",
+    layoutMode: "fitRows",
+  });
+
   $("#project-filter-1").change(function () {
     let value = $("#project-filter-1").val();
     $(`.project-filter-2 > div[value="${value}"]`).click();
@@ -104,6 +110,6 @@ $(function () {
     $(".project-filter-2-active").removeClass("project-filter-2-active");
     $(this).addClass("project-filter-2-active");
     $("#project-filter-1").val(value);
-    console.log(value);
+    $projects.isotope({ filter: `.${value}` });
   });
 });
