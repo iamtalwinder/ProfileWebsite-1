@@ -50,6 +50,55 @@
   height: 300px;
   width: 100%;
   margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.project div,
+.project button {
+  transition: inherit;
+  opacity: 0;
+}
+
+.project div h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project div p {
+  overflow-wrap: break-word;
+  color: #e31b6d;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.project button {
+  padding: 10px 20px;
+  border: 3px solid #e31b6d;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  font-size: 16px;
+  margin-top: 200px;
+  transition: 0.5s ease;
+}
+
+.project button:hover {
+  background: #e31b6d;
+  color: #ffffff;
+}
+
+.project:hover.project div {
+  opacity: 1;
+  margin-top: 90px;
+}
+
+.project:hover.project button {
+  opacity: 1;
+  margin-top: 30px;
+}
+
+.project:hover {
+  background: #ffffff;
 }
 
 @media screen and (min-width: 750px) {
