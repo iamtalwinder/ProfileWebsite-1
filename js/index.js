@@ -112,4 +112,25 @@ $(function () {
     $("#project-filter-1").val(value);
     $projects.isotope({ filter: `.${value}` });
   });
+
+  let link = null;
+
+  $(".project button").click(function () {
+    const projectData = PROJECT_DATA[$(this).attr("data")];
+    link = projectData.link;
+    $("#modal").css("display", "block");
+    $("#project-name").text(projectData.name);
+    $("#short-summary").text(projectData.shortSummary);
+    $("#detailed-summary").text(projectData.detailedSummary);
+  });
+
+  $("#view-site").click(function () {
+    if (link) {
+      window.open(link, "_blank");
+    }
+  });
+
+  $("#close").click(function () {
+    $("#modal").css("display", "none");
+  });
 });

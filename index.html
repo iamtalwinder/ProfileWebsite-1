@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/utils.css" />
 
     <link
@@ -118,70 +119,70 @@
           <div class="flex skill-wrap" transition="0.8s ease">
             <div class="bar">
               <div>HTML</div>
-              <div style="width: 90%;">
+              <div style="width: 90%">
                 <span>90%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>CSS</div>
-              <div style="width: 90%;">
+              <div style="width: 90%">
                 <span>90%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>JavaScript</div>
-              <div style="width: 85%;">
+              <div style="width: 85%">
                 <span>85%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>JQuery</div>
-              <div style="width: 85%;">
+              <div style="width: 85%">
                 <span>85%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>React</div>
-              <div style="width: 80%;">
+              <div style="width: 80%">
                 <span>80%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>Bootstrap</div>
-              <div style="width: 80%;">
+              <div style="width: 80%">
                 <span>80%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>Nodejs</div>
-              <div style="width: 75%;">
+              <div style="width: 75%">
                 <span>75%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>Python</div>
-              <div style="width: 70%;">
+              <div style="width: 70%">
                 <span>70%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>Django</div>
-              <div style="width: 65%;">
+              <div style="width: 65%">
                 <span>65%</span>
               </div>
             </div>
 
             <div class="bar">
               <div>MySql</div>
-              <div style="width: 60%;">
+              <div style="width: 60%">
                 <span>60%</span>
               </div>
             </div>
@@ -216,60 +217,81 @@
         </div>
 
         <div class="projects">
-          <div class="project All React MySQL Python">
+          <div
+            style="background-image: url(img/project-1/dp.jpg)"
+            class="project All React MySQL Python"
+          >
             <div>
               <h3>Project-1</h3>
               <p>React/MySQL/Python</p>
+              <button data="project1">Learn More</button>
             </div>
-            <button>Learn More</button>
           </div>
 
-          <div class="project All Jquery">
+          <div
+            style="background-image: url(img/project-1/dp.jpg)"
+            class="project All Jquery"
+          >
             <div>
               <h3>Project-2</h3>
               <p>Jquery</p>
+              <button data="project2">Learn More</button>
             </div>
-            <button>Learn More</button>
           </div>
 
-          <div class="project All React Bootstrap">
+          <div
+            style="background-image: url(img/project-1/dp.jpg)"
+            class="project All React Bootstrap"
+          >
             <div>
               <h3>Project-3</h3>
               <p>React/Bootstrap</p>
+              <button data="project3">Learn More</button>
             </div>
-            <button>Learn More</button>
           </div>
 
-          <div class="project All React Bootstrap Nodejs MySQL">
+          <div
+            style="background-image: url(img/project-1/dp.jpg)"
+            class="project All React Bootstrap Nodejs MySQL"
+          >
             <div>
               <h3>Project-4</h3>
               <p>React/Bootstrap/Nodejs/MySQL</p>
+              <button data="project4">Learn More</button>
             </div>
-            <button>Learn More</button>
           </div>
 
-          <div class="project All React Nodejs MySQL">
+          <div
+            style="background-image: url(img/project-1/dp.jpg)"
+            class="project All React Nodejs MySQL"
+          >
             <div>
               <h3>Project-5</h3>
               <p>React/Nodejs/MySQL</p>
+              <button data="project5">Learn More</button>
             </div>
-            <button>Learn More</button>
           </div>
 
-          <div class="project All React Bootstrap">
+          <div
+            style="background-image: url(img/project-1/dp.jpg)"
+            class="project All React Bootstrap"
+          >
             <div>
               <h3>Project-6</h3>
               <p>React/Bootstrap</p>
+              <button data="project6">Learn More</button>
             </div>
-            <button>Learn More</button>
           </div>
 
-          <div class="project All Bootstrap Jquery">
+          <div
+            style="background-image: url(img/project-1/dp.jpg)"
+            class="project All Bootstrap Jquery"
+          >
             <div>
               <h3>Project-7</h3>
               <p>Bootstrap/Jquery</p>
+              <button data="project7">Learn More</button>
             </div>
-            <button>Learn More</button>
           </div>
         </div>
       </section>
@@ -283,12 +305,12 @@
           <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
         </svg>
         <div class="flex">
-          <div class="header" style="color: #fff;" transition="0.8s ease">
+          <div class="header" style="color: #fff" transition="0.8s ease">
             CONTACT
           </div>
           <div
             class="header-bar"
-            style="background: #fff;"
+            style="background: #fff"
             transition="0.8s ease"
           ></div>
           <p class="green-highlight form-header">
@@ -329,9 +351,38 @@
         <i class="material-icons">double_arrow</i>
       </button>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+        <button id="view-site">
+          <i class="material-icons">open_in_new</i><span>VIEW SITE</span>
+        </button>
+
+        <div class="carousel"'>
+          <div class="carousel-cell">
+          </div>
+
+          <div class="carousel-cell">
+          </div>
+
+          <div class="carousel-cell">
+          </div>
+        </div>
+
+        <div class="details">
+          <h3 id="project-name"></h3>
+          <h5 id="short-summary"></h5>
+          <div class="header-bar"></div>
+          <p id="detailed-summary"></p>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/project-data.js"></script>
   <script src="js/index.js"></script>
 </html>
