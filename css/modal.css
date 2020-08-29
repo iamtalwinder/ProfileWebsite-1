@@ -25,9 +25,13 @@
   animation-duration: 0.4s;
 }
 
-.carousel {
+.owl-carousel {
   height: 40%;
+}
+
+.owl-carousel .item {
   width: 100%;
+  height: 100%;
 }
 
 .details {

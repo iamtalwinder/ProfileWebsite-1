@@ -100,6 +100,19 @@ $(function () {
     layoutMode: "fitRows",
   });
 
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
   $("#project-filter-1").change(function () {
     let value = $("#project-filter-1").val();
     $(`.project-filter-2 > div[value="${value}"]`).click();
@@ -114,14 +127,20 @@ $(function () {
   });
 
   let link = null;
+  let prevProject = "project1";
 
   $(".project button").click(function () {
-    const projectData = PROJECT_DATA[$(this).attr("data")];
+    const currentProject = $(this).attr("data");
+    const projectData = PROJECT_DATA[currentProject];
     link = projectData.link;
     $("#modal").css("display", "block");
     $("#project-name").text(projectData.name);
     $("#short-summary").text(projectData.shortSummary);
     $("#detailed-summary").text(projectData.detailedSummary);
+    $(".owl-carousel .item").attr("src", function (i, ov) {
+      return ov.replace(prevProject, currentProject);
+    });
+    prevProject = currentProject;
   });
 
   $("#view-site").click(function () {
