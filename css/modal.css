@@ -22,7 +22,7 @@
   height: 98vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
-  animation-duration: 0.4s;
+  animation-duration: 0.2s;
 }
 
 .owl-carousel {
@@ -90,7 +90,7 @@
   font-size: 12px;
   border: 3px solid #a8094b;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 #view-site i {
@@ -114,7 +114,7 @@
     opacity: 0;
   }
   to {
-    top: 0;
+    top: 1vh;
     opacity: 1;
   }
 }
